@@ -32,11 +32,9 @@ export default function Navigation({ onBookingClick }: NavigationProps) {
       <div className="max-w-7xl mx-auto section-padding">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <img
-              src="/images/amethyst-logo.avif"
-              alt="Amethyst Aesthetics Beauty"
-              className="h-12 w-auto"
-            />
+            <span className="font-display text-xl sm:text-2xl font-bold text-primary-700">
+              Diluxe <span className="text-accent-500">Aesthetics</span>
+            </span>
           </a>
 
           <div className="hidden md:flex items-center space-x-8">

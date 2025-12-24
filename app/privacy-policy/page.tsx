@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy | Amethyst Aesthetics Beauty',
-  description: 'Privacy Policy for Amethyst Aesthetics Beauty CO2 Laser Treatments in Somerset',
+  title: 'Privacy Policy | Diluxe Aesthetics Cambridge',
+  description: 'Privacy Policy for Diluxe Aesthetics Cambridge HIFU Treatments',
 }
 
 export default function PrivacyPolicy() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
             <p className="text-neutral-700 leading-relaxed">
-              Amethyst Aesthetics Beauty ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website co2somerset.co.uk and use our services.
+              Diluxe Aesthetics Cambridge ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website hifucambridge.com and use our services.
             </p>
           </section>
 
@@ -168,15 +168,11 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:
             </p>
             <div className="bg-white rounded-xl p-6 border border-neutral-200">
-              <p className="font-semibold mb-2">Amethyst Aesthetics Beauty</p>
-              <p className="text-neutral-700">Unit 2, Old Apple Store</p>
-              <p className="text-neutral-700">New Cross Hill</p>
-              <p className="text-neutral-700">South Petherton, Somerset TA13 5HV</p>
+              <p className="font-semibold mb-2">Diluxe Aesthetics Cambridge</p>
+              <p className="text-neutral-700">Cherry Hinton</p>
+              <p className="text-neutral-700">Cambridge</p>
               <p className="text-neutral-700 mt-3">
-                <strong>Phone:</strong> <a href="tel:+447366904007" className="text-primary-600 hover:text-primary-700">07366 904007</a>
-              </p>
-              <p className="text-neutral-700">
-                <strong>Email:</strong> <a href="mailto:Ismaymarianne@gmail.com" className="text-primary-600 hover:text-primary-700">Ismaymarianne@gmail.com</a>
+                <strong>Instagram:</strong> <a href="https://www.instagram.com/diluxe.aesthetics" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700">@diluxe.aesthetics</a>
               </p>
             </div>
           </section>

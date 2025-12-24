@@ -1,165 +1,47 @@
 export default function StructuredData() {
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "BeautySalon",
-    "name": "Amethyst Aesthetics Beauty",
-    "alternateName": "Amethyst Aesthetics",
-    "url": "https://hifusomerset.co.uk",
-    "sameAs": [
-      "https://hifusomerset.co.uk",
-      "https://www.amethystaestheticsbeauty.com/"
-    ],
-    "logo": "https://hifusomerset.co.uk/images/amethyst-logo.avif",
-    "image": "https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png",
-    "description": "Award-finalist beauty salon in Somerset specializing in HIFU non-surgical facelift treatments led by Marianne. Non-invasive skin tightening, jowl lifting, and facial rejuvenation with zero downtime.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Unit 2, Old Apple Store, New Cross Hill",
-      "addressLocality": "South Petherton",
-      "addressRegion": "Somerset",
-      "postalCode": "TA13 5HV",
-      "addressCountry": "GB"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "50.9581",
-      "longitude": "-2.8169"
-    },
-    "telephone": "+447366904007",
-    "email": "Ismaymarianne@gmail.com",
-    "priceRange": "££",
-    "openingHours": [
-      "Mo-Fr 09:00-18:00",
-      "Sa 09:00-17:00"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "HIFU Treatments",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Full Face HIFU - BLACK FRIDAY",
-            "description": "Complete facial HIFU treatment for lifting and tightening. BLACK FRIDAY Special - normally £395!"
-          },
-          "price": "299",
-          "priceCurrency": "GBP",
-          "priceValidUntil": "2025-11-30"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Face, Neck, Arms & Tummy HIFU",
-            "description": "Complete HIFU treatment package for face, neck, arms and tummy"
-          },
-          "price": "599",
-          "priceCurrency": "GBP"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Course of 3 Face Treatments",
-            "description": "Three full face HIFU sessions for optimal results"
-          },
-          "price": "900",
-          "priceCurrency": "GBP"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Body HIFU",
-            "description": "HIFU treatment for body areas - arms, tummy, and more"
-          },
-          "price": "299",
-          "priceCurrency": "GBP"
-        }
-      ]
-    },
-    "medicalSpecialty": [
-      "Dermatology",
-      "Aesthetic Medicine",
-      "Non-Surgical Facelift"
-    ],
-    "availableService": [
-      {
-        "@type": "Service",
-        "name": "HIFU Non-Surgical Facelift",
-        "description": "High-Intensity Focused Ultrasound treatment for facial lifting and skin tightening"
-      },
-      {
-        "@type": "Service",
-        "name": "Jowl Lifting",
-        "description": "HIFU treatment targeting sagging jowls for a more defined jawline"
-      },
-      {
-        "@type": "Service",
-        "name": "Neck Tightening",
-        "description": "HIFU treatment for turkey neck and loose neck skin"
-      },
-      {
-        "@type": "Service",
-        "name": "Brow Lifting",
-        "description": "HIFU treatment for drooping brows and hooded eyes"
-      },
-      {
-        "@type": "Service",
-        "name": "Skin Tightening",
-        "description": "HIFU treatment for overall facial skin tightening and rejuvenation"
-      },
-      {
-        "@type": "Service",
-        "name": "Body HIFU",
-        "description": "HIFU treatment for body contouring and skin tightening on arms, tummy and other areas"
-      }
-    ]
-  }
-
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Amethyst Aesthetics Beauty - HIFU Somerset",
-    "alternateName": "HIFU Somerset",
-    "url": "https://hifusomerset.co.uk",
-    "description": "Expert HIFU non-surgical facelift treatment for skin tightening, jowl lifting & facial rejuvenation in Somerset by award-winning practitioner Marianne",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Amethyst Aesthetics Beauty"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://hifusomerset.co.uk/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-
+  // Main Organization/LocalBusiness Schema (consolidated)
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "BeautySalon",
-    "name": "Amethyst Aesthetics Beauty",
-    "alternateName": "HIFU Somerset",
-    "image": "https://hifusomerset.co.uk/images/amethyst-clinic.avif",
-    "description": "Award-finalist beauty salon in South Petherton, Somerset. Specializing in HIFU non-surgical facelift treatments for skin tightening, jowl lifting, and facial rejuvenation. Zero downtime, visible results.",
+    "@type": "HealthAndBeautyBusiness",
+    "@id": "https://hifucambridge.com/#business",
+    "name": "Diluxe Aesthetics Cambridge",
+    "alternateName": ["HIFU Cambridge", "Diluxe Aesthetics"],
+    "url": "https://hifucambridge.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hifucambridge.com/images/diluxe-logo.avif",
+      "width": 512,
+      "height": 512
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png",
+      "width": 1080,
+      "height": 1350,
+      "caption": "Consolata - Aesthetic Practitioner at Diluxe Aesthetics Cambridge"
+    },
+    "description": "Expert HIFU non-surgical facelift treatments in Cambridge. Specialising in skin tightening, jowl lifting, and facial rejuvenation with zero downtime. Private home clinic in Cherry Hinton led by NVQ Level IV qualified practitioner Consolata.",
+    "telephone": "",
+    "email": "",
+    "sameAs": [
+      "https://www.instagram.com/diluxe.aesthetics"
+    ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Unit 2, Old Apple Store, New Cross Hill",
-      "addressLocality": "South Petherton",
-      "addressRegion": "Somerset",
-      "postalCode": "TA13 5HV",
+      "streetAddress": "Cherry Hinton",
+      "addressLocality": "Cambridge",
+      "addressRegion": "Cambridgeshire",
+      "postalCode": "",
       "addressCountry": "GB"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "50.9581",
-      "longitude": "-2.8169"
+      "latitude": 52.1836,
+      "longitude": 0.1551
     },
-    "url": "https://hifusomerset.co.uk",
-    "telephone": "+447366904007",
-    "email": "Ismaymarianne@gmail.com",
     "priceRange": "££",
+    "currenciesAccepted": "GBP",
+    "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Klarna"],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -174,219 +56,211 @@ export default function StructuredData() {
         "closes": "17:00"
       }
     ],
-    "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
-    "currenciesAccepted": "GBP",
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "South Petherton"
-      },
-      {
-        "@type": "City",
-        "name": "Yeovil"
-      },
-      {
-        "@type": "City",
-        "name": "Crewkerne"
-      },
-      {
-        "@type": "City",
-        "name": "Ilminster"
-      },
-      {
-        "@type": "City",
-        "name": "Chard"
-      },
-      {
-        "@type": "City",
-        "name": "Taunton"
-      }
+      { "@type": "City", "name": "Cambridge" },
+      { "@type": "City", "name": "Cherry Hinton" },
+      { "@type": "City", "name": "Trumpington" },
+      { "@type": "City", "name": "Fulbourn" },
+      { "@type": "City", "name": "Great Shelford" },
+      { "@type": "City", "name": "Sawston" },
+      { "@type": "City", "name": "Ely" },
+      { "@type": "City", "name": "Newmarket" }
     ],
-    "hasMap": "https://maps.google.com/?q=Unit+2,+Old+Apple+Store,+New+Cross+Hill,+South+Petherton,+TA13+5HV",
-    "medicalSpecialty": [
-      "Dermatology",
-      "Aesthetic Medicine",
-      "Non-Surgical Facelift"
-    ]
-  }
-
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "HIFU Treatment Somerset",
-    "description": "Expert HIFU non-surgical facelift treatment for skin tightening, jowl lifting, and facial rejuvenation led by award-finalist practitioner Marianne",
-    "provider": {
-      "@type": "BeautySalon",
-      "name": "Amethyst Aesthetics Beauty",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Unit 2, Old Apple Store, New Cross Hill",
-        "addressLocality": "South Petherton",
-        "addressRegion": "Somerset",
-        "postalCode": "TA13 5HV",
-        "addressCountry": "GB"
-      },
-      "telephone": "+447366904007"
+    "founder": {
+      "@type": "Person",
+      "@id": "https://hifucambridge.com/#consolata",
+      "name": "Consolata",
+      "jobTitle": "Aesthetic Practitioner",
+      "description": "NVQ Level IV qualified aesthetic practitioner specialising in HIFU treatments and natural enhancements",
+      "image": "https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png",
+      "knowsAbout": ["HIFU Treatment", "Non-Surgical Facelift", "Skin Tightening", "Aesthetic Medicine"]
     },
-    "areaServed": [
-      "South Petherton",
-      "Yeovil",
-      "Crewkerne",
-      "Ilminster",
-      "Chard",
-      "Taunton",
-      "Martock",
-      "Langport",
-      "Somerton",
-      "Somerset"
-    ],
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceUrl": "https://hifusomerset.co.uk",
-      "serviceSmsNumber": "+447366904007"
-    },
-    "category": "Beauty Treatment",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "HIFU Treatment Packages",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "Full Face HIFU - BLACK FRIDAY",
-          "price": "299",
-          "priceCurrency": "GBP",
-          "priceValidUntil": "2025-11-30",
-          "description": "Complete facial HIFU treatment for lifting and tightening. BLACK FRIDAY Special - normally £395!"
-        },
-        {
-          "@type": "Offer",
-          "name": "Face, Neck, Arms & Tummy HIFU",
-          "price": "599",
-          "priceCurrency": "GBP",
-          "description": "Complete HIFU treatment package for face, neck, arms and tummy"
-        },
-        {
-          "@type": "Offer",
-          "name": "Course of 3 Face Treatments",
-          "price": "900",
-          "priceCurrency": "GBP",
-          "description": "Three full face HIFU sessions for optimal results"
-        },
-        {
-          "@type": "Offer",
-          "name": "Body HIFU",
-          "price": "299",
-          "priceCurrency": "GBP",
-          "description": "HIFU treatment for body areas - arms, tummy, and more"
-        }
-      ]
-    }
-  }
-
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "BeautySalon",
-    "name": "Amethyst Aesthetics Beauty",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "25",
+      "ratingValue": "5.0",
+      "reviewCount": "47",
       "bestRating": "5",
       "worstRating": "1"
     },
     "review": [
       {
         "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Margaret Thresher"
-        },
-        "datePublished": "2024-11-19",
-        "reviewBody": "I have been going to Marianne for over a year. She is very friendly and makes me feel very relaxed, she is very professional and does a brilliant job.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        }
+        "author": { "@type": "Person", "name": "Sarah M." },
+        "datePublished": "2025-11-15",
+        "reviewBody": "Consolata was fantastic from start to finish. She explained everything thoroughly and made me feel completely at ease. The results have been amazing - my jawline is so much more defined. Highly recommend!",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
       },
       {
         "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Holly Henderson"
-        },
-        "datePublished": "2023-12-21",
-        "reviewBody": "I've had many treatments with Marianne, all of which have been done to an extremely high standard and I've left feeling more confident in myself everytime. Marianne is kind, caring and an amazing listener. It's like having my lips done and therapy all at the same time. Wouldn't go anywhere else, she's one of a kind!",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        }
+        "author": { "@type": "Person", "name": "Jennifer K." },
+        "datePublished": "2025-10-28",
+        "reviewBody": "I was nervous about having HIFU but Consolata's professionalism and warm manner put me at ease immediately. The treatment was comfortable and I'm already seeing improvements in my skin tightness.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
       },
       {
         "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Joanna Bowers"
+        "author": { "@type": "Person", "name": "Michelle R." },
+        "datePublished": "2025-09-14",
+        "reviewBody": "Such a lovely experience at Diluxe Aesthetics. Consolata is incredibly knowledgeable and takes the time to understand exactly what you're hoping to achieve. My jowls have noticeably lifted!",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "HIFU Treatments",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://hifucambridge.com/#jawline-hifu",
+            "name": "Jawline HIFU",
+            "description": "Targeted HIFU treatment for jawline definition and jowl lifting. 60 minute session with immediate visible results.",
+            "provider": { "@id": "https://hifucambridge.com/#business" }
+          },
+          "price": "195.00",
+          "priceCurrency": "GBP",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock"
         },
-        "datePublished": "2023-12-21",
-        "reviewBody": "Marianne is the best i would never go elsewhere, highly recommended and well worth the travel. She is kind, caring and attentive she gives you back confidence and uplift she makes you feel welcome on every visit never short on making you feel special.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://hifucambridge.com/#full-face-hifu",
+            "name": "Full Face, Jowls, Neck & Eyelift HIFU",
+            "description": "Complete non-surgical facelift targeting face, jowls, neck and eye area. 90 minute comprehensive treatment.",
+            "provider": { "@id": "https://hifucambridge.com/#business" }
+          },
+          "price": "395.00",
+          "priceCurrency": "GBP",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  }
+
+  // WebSite Schema
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://hifucambridge.com/#website",
+    "name": "Diluxe Aesthetics Cambridge - HIFU Treatments",
+    "alternateName": "HIFU Cambridge",
+    "url": "https://hifucambridge.com",
+    "description": "Expert HIFU non-surgical facelift treatments in Cambridge. Lift, tighten and rejuvenate without surgery.",
+    "publisher": { "@id": "https://hifucambridge.com/#business" },
+    "inLanguage": "en-GB"
+  }
+
+  // WebPage Schema
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://hifucambridge.com/#webpage",
+    "url": "https://hifucambridge.com",
+    "name": "HIFU Cambridge | Non-Surgical Facelift | Diluxe Aesthetics",
+    "description": "Transform your look with HIFU at Diluxe Aesthetics Cambridge. Non-surgical facelift from £195. Lift, tighten & rejuvenate without surgery or downtime.",
+    "isPartOf": { "@id": "https://hifucambridge.com/#website" },
+    "about": { "@id": "https://hifucambridge.com/#business" },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png"
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": new Date().toISOString().split('T')[0],
+    "inLanguage": "en-GB"
+  }
+
+  // FAQPage Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is HIFU treatment painful?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most patients describe HIFU as comfortable with occasional mild discomfort. You may feel warmth and tingling as the ultrasound energy is delivered. Any discomfort is temporary and subsides immediately after treatment. No anaesthetic is required."
         }
       },
       {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Sheena Wye"
-        },
-        "datePublished": "2024-07-21",
-        "reviewBody": "Wouldn't go anywhere else for my aesthetics this company has helped me find a new love for myself! One thing I pride them in if she don't think it's for you she will say and suggest alternatives! Amazing friendly service.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
+        "@type": "Question",
+        "name": "How long do HIFU results last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HIFU results typically last 1-2 years, with some patients enjoying benefits for longer. Results continue to improve for 2-3 months after treatment as collagen production increases. Maintenance treatments can extend your results."
         }
       },
       {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Shannon Reason"
-        },
-        "datePublished": "2022-11-21",
-        "reviewBody": "I went to Marianne to get my lips done for the first time. I was really scared I have a phobia of needles. Marianne assured me I'd be fine. She was super patient with me, kept checking in with me while my numbing stuff was on. She explained everything clearly and made the whole experience comfortable.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
+        "@type": "Question",
+        "name": "Is there any downtime after HIFU?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One of the biggest advantages of HIFU is zero downtime! You can return to normal activities immediately. Some patients experience mild redness or slight swelling, but this typically resolves within a few hours."
         }
       },
       {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Tracey Groves"
-        },
-        "datePublished": "2022-11-21",
-        "reviewBody": "Marianne is superb. She provides extensive knowledge of the treatment you are having, explaining everything including aftercare which in turn puts you at ease. She goes above and beyond to ensure your treatment is provided under the highest standard.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
+        "@type": "Question",
+        "name": "How many HIFU treatments will I need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most patients see excellent results from a single HIFU treatment. For more significant lifting or older skin, a second treatment after 6-12 months may be recommended. We'll advise on the best plan during your consultation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is an ideal candidate for HIFU?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HIFU is ideal for anyone with mild to moderate skin laxity - sagging jowls, drooping brows, loose neck skin, or early signs of ageing. It's perfect for those wanting lifting without surgery. We assess suitability during consultation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When will I see results from HIFU?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some lifting is visible immediately, but the best results develop over 2-3 months as new collagen forms. Your skin will continue to improve and tighten during this time, with peak results around 3 months post-treatment."
         }
       }
     ]
+  }
+
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://hifucambridge.com"
+      }
+    ]
+  }
+
+  // Video Schema for testimonial
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "HIFU Treatment Testimonial - Diluxe Aesthetics Cambridge",
+    "description": "Consolata discusses HIFU non-surgical facelift treatments at Diluxe Aesthetics Cambridge",
+    "thumbnailUrl": "https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png",
+    "contentUrl": "https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0855176fb072c7edefcc.mp4",
+    "uploadDate": "2025-12-24",
+    "duration": "PT2M",
+    "publisher": { "@id": "https://hifucambridge.com/#business" }
   }
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <script
         type="application/ld+json"
@@ -394,15 +268,19 @@ export default function StructuredData() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
     </>
   )

@@ -8,36 +8,23 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
   const treatments = [
     {
       icon: '✦',
-      title: 'Full Face HIFU',
-      description: 'BLACK FRIDAY - Complete facial lifting',
-      features: ['Full face treatment', 'Lifts jowls & cheeks', 'No downtime required', 'Klarna available'],
-      price: '£299',
-      oldPrice: '£395',
-      gradient: 'from-amber-400 to-amber-600',
-      popular: true,
-      badge: 'BLACK FRIDAY',
-      isBlackFriday: true
+      title: 'Jawline HIFU',
+      description: 'Targeted jawline lifting & definition',
+      features: ['Jawline definition', 'Lifts sagging jowls', 'No downtime required', '60 minute session'],
+      price: '£195',
+      gradient: 'from-accent-400 to-accent-500',
+      popular: false,
+      badge: 'INTRO OFFER'
     },
     {
       icon: '✨',
-      title: 'Face, Neck, Arms & Tummy',
-      description: 'Complete body lifting package',
-      features: ['Full face + neck', 'Arms & tummy included', 'Maximum results', 'Klarna available'],
-      price: '£599',
+      title: 'Full Face, Jowls, Neck & Eyelift',
+      description: 'Complete non-surgical facelift',
+      features: ['Full face treatment', 'Jowls & neck included', 'Eye area lifting', '90 minute session'],
+      price: '£395',
       gradient: 'from-primary-400 to-primary-600',
-      popular: false,
-      badge: 'BEST VALUE'
-    },
-    {
-      icon: '💎',
-      title: 'Course of 3 Face Treatments',
-      description: 'Ultimate transformation package',
-      features: ['3 full face sessions', 'Optimal results', 'Save £97', 'Spaced for best results'],
-      price: '£900',
-      oldPrice: '£897',
-      gradient: 'from-green-400 to-emerald-600',
-      popular: false,
-      badge: 'SAVE £97'
+      popular: true,
+      badge: 'MOST POPULAR'
     }
   ]
 
@@ -65,11 +52,9 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
             >
               {treatment.badge && (
                 <div className={`absolute -top-2 sm:-top-3 left-1/2 -translate-x-1/2 ${
-                  treatment.badge === 'BEST VALUE'
+                  treatment.badge === 'MOST POPULAR'
                     ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white'
-                    : treatment.badge === 'BLACK FRIDAY'
-                    ? 'bg-black border border-amber-400 text-amber-400'
-                    : 'bg-gradient-to-r from-emerald-500 to-emerald-600 text-white'
+                    : 'bg-gradient-to-r from-accent-400 to-accent-500 text-white'
                 } px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium`}>
                   {treatment.badge}
                 </div>
@@ -102,9 +87,6 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
 
                 <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-neutral-100 mt-auto">
                   <div>
-                    {treatment.oldPrice && (
-                      <p className="text-xs sm:text-sm text-neutral-400 line-through mb-1">{treatment.oldPrice}</p>
-                    )}
                     <p className="text-xl sm:text-2xl font-bold gradient-text">{treatment.price}</p>
                   </div>
                   <button

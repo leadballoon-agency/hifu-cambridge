@@ -5,17 +5,18 @@ interface AboutSectionProps {
 export default function AboutSection({ onBookingClick }: AboutSectionProps) {
   const practitioners = [
     {
-      name: 'Marianne',
-      title: 'Founder & Advanced Aesthetics Practitioner',
-      image: '/images/team/Marianne.png',
-      bio: 'As the founder of Amethyst Aesthetics Beauty, I bring over 4 years of dedicated expertise in advanced aesthetic treatments. Specialising in non-surgical facial rejuvenation, I offer HIFU treatments that deliver real lifting results without surgery or downtime. Our clinic has been recognised as a finalist for Best Beauty Salon in Yeovil, reflecting our commitment to exceptional care and outstanding results for every client.',
+      name: 'Consolata',
+      title: 'Cambridge Aesthetic Practitioner',
+      image: 'https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png',
+      bio: 'Welcome to Diluxe Aesthetics Cambridge. I specialise in natural enhancements and HIFU treatments from my private clinic in Cherry Hinton. With NVQ Level IV qualifications in Laser and Light Therapies, I bring professional expertise and a passion for helping clients achieve their aesthetic goals. My focus is on delivering subtle, natural-looking results that enhance your confidence without looking overdone.',
       qualifications: [
+        'NVQ Level IV - Laser & Light Therapies',
         'HIFU Treatment Specialist',
         'Non-Surgical Facelift Expert',
-        'Advanced Skin Tightening',
-        'Award-Finalist Beauty Salon',
-        '4+ Years Aesthetic Medicine'
-      ]
+        'Body Contouring Trained',
+        'Special Interest in Skin Care'
+      ],
+      instagram: 'diluxe.aesthetics'
     }
   ]
 
@@ -23,21 +24,21 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
     <section id="about" className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto section-padding">
         <div className="text-center mb-6 sm:mb-8 lg:mb-10">
-          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Meet Your Expert Practitioner</span>
+          <span className="text-primary-600 font-medium tracking-wider uppercase text-xs sm:text-sm">Meet Your Practitioner</span>
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mt-2 sm:mt-3">
             Your Journey to
-            <span className="block gradient-text">Beautiful Skin</span>
+            <span className="block gradient-text">Natural Enhancement</span>
           </h2>
           <p className="text-sm sm:text-base leading-relaxed text-neutral-600 mt-2 sm:mt-3 max-w-2xl mx-auto px-4">
-            Award-winning expertise dedicated to your aesthetic transformation
+            Professional expertise dedicated to your aesthetic transformation
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-lg mx-auto">
           {practitioners.map((practitioner, index) => (
-            <div key={index} className="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-premium hover:shadow-premium-lg transition-all duration-300">
+            <div key={index} className="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-5 sm:p-6 shadow-premium hover:shadow-premium-lg transition-all duration-300">
               {/* Practitioner Image */}
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-lg mb-6">
+              <div className="relative rounded-xl overflow-hidden shadow-lg mb-4 max-w-[200px] mx-auto">
                 <div className="aspect-[4/5] relative">
                   <img
                     src={practitioner.image}
@@ -49,30 +50,30 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
               </div>
 
               {/* Practitioner Info */}
-              <div className="space-y-4">
+              <div className="space-y-3 text-center">
                 <div>
-                  <h3 className="font-display text-2xl sm:text-3xl font-bold">
+                  <h3 className="font-display text-xl sm:text-2xl font-bold">
                     {practitioner.name}
                   </h3>
-                  <p className="text-base sm:text-lg text-primary-600 font-medium mt-1">
+                  <p className="text-sm sm:text-base text-primary-600 font-medium mt-1">
                     {practitioner.title}
                   </p>
                 </div>
 
-                <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
+                <p className="text-sm text-neutral-600 leading-relaxed">
                   {practitioner.bio}
                 </p>
 
                 {/* Qualifications */}
-                <div className="space-y-3 pt-2">
-                  <h4 className="font-bold text-base sm:text-lg">Qualifications & Expertise</h4>
-                  <ul className="space-y-2">
+                <div className="space-y-2 pt-2 text-left">
+                  <h4 className="font-bold text-sm sm:text-base text-center">Qualifications & Expertise</h4>
+                  <ul className="space-y-1.5 max-w-sm mx-auto">
                     {practitioner.qualifications.map((item, qIndex) => (
                       <li key={qIndex} className="flex items-start text-neutral-700">
-                        <svg className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-4 h-4 text-primary-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
-                        <span className="text-sm leading-relaxed">{item}</span>
+                        <span className="text-xs sm:text-sm leading-relaxed">{item}</span>
                       </li>
                     ))}
                   </ul>

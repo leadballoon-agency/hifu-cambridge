@@ -9,42 +9,42 @@ import ConvertBox from '@/components/ConvertBox'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 - Non-Surgical Facelift | Amethyst Aesthetics Beauty',
-  description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU at Amethyst Aesthetics Beauty, South Petherton. Just £299 (normally £395 - Save £96!). Lift, tighten & rejuvenate without surgery. Award-finalist clinic with experienced practitioners. No downtime. Klarna available.',
-  keywords: 'HIFU Somerset, Black Friday HIFU, non-surgical facelift Somerset, HIFU treatment, skin tightening Somerset, face lift without surgery, Amethyst Aesthetics Beauty, Marianne aesthetics, South Petherton aesthetics, Somerset aesthetics, HIFU UK, ultrasound facelift, jowl lifting Somerset, Yeovil aesthetics, HIFU deals, neck tightening',
-  authors: [{ name: 'Amethyst Aesthetics Beauty' }],
-  creator: 'Amethyst Aesthetics Beauty',
-  publisher: 'Amethyst Aesthetics Beauty',
+  title: 'HIFU Cambridge | Non-Surgical Facelift | Diluxe Aesthetics',
+  description: 'Transform your look with HIFU at Diluxe Aesthetics Cambridge. Non-surgical facelift from £195. Lift, tighten & rejuvenate without surgery. Experienced practitioner in Cherry Hinton. Natural enhancements, no downtime.',
+  keywords: 'HIFU Cambridge, HIFU Cherry Hinton, non-surgical facelift Cambridge, HIFU treatment Cambridge, skin tightening Cambridge, face lift without surgery, Diluxe Aesthetics, Cambridge aesthetics, HIFU Cambridgeshire, ultrasound facelift, jowl lifting Cambridge, neck tightening Cambridge, HIFU UK',
+  authors: [{ name: 'Diluxe Aesthetics Cambridge' }],
+  creator: 'Diluxe Aesthetics Cambridge',
+  publisher: 'Diluxe Aesthetics Cambridge',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://hifusomerset.co.uk'),
+  metadataBase: new URL('https://hifucambridge.com'),
   alternates: {
-    canonical: 'https://hifusomerset.co.uk',
+    canonical: 'https://hifucambridge.com',
   },
   openGraph: {
-    title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 - Save £96! | Amethyst Aesthetics Beauty',
-    description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU. Just £299 (normally £395 - Save £96!). Lift, tighten & rejuvenate without surgery or downtime. Award-finalist Somerset clinic. Klarna available.',
-    url: 'https://hifusomerset.co.uk',
-    siteName: 'Amethyst Aesthetics Beauty - HIFU Somerset',
+    title: 'HIFU Cambridge | Non-Surgical Facelift | Diluxe Aesthetics',
+    description: 'Transform your look with HIFU at Diluxe Aesthetics Cambridge. Non-surgical facelift from £195. Lift, tighten & rejuvenate without surgery or downtime. Natural enhancements by experienced practitioner.',
+    url: 'https://hifucambridge.com',
+    siteName: 'Diluxe Aesthetics Cambridge - HIFU Treatments',
     type: 'website',
     locale: 'en_GB',
     images: [
       {
-        url: 'https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png',
-        width: 1200,
-        height: 630,
-        alt: 'BLACK FRIDAY - HIFU Non-Surgical Facelift Before and After Results - Amethyst Aesthetics Beauty Somerset',
+        url: 'https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png',
+        width: 1080,
+        height: 1350,
+        alt: 'Consolata - Aesthetic Practitioner at Diluxe Aesthetics Cambridge',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BLACK FRIDAY: HIFU Treatment Somerset £299 | Amethyst Aesthetics Beauty',
-    description: 'BLACK FRIDAY SPECIAL! Non-surgical facelift with HIFU. Just £299 (normally £395 - Save £96!). Lift & tighten without surgery. No downtime. Klarna available.',
-    images: ['https://hifusomerset.co.uk/images/stunning-results-1-session-hifu-bf1.png'],
+    title: 'HIFU Cambridge | Non-Surgical Facelift | Diluxe Aesthetics',
+    description: 'Transform your look with HIFU at Diluxe Aesthetics Cambridge. Non-surgical facelift from £195. Lift & tighten without surgery. No downtime.',
+    images: ['https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0869e889d3cb4749a7dc.png'],
   },
   robots: {
     index: true,
@@ -61,10 +61,10 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   other: {
-    'geo.region': 'GB-SOM',
-    'geo.placename': 'South Petherton',
-    'geo.position': '50.9581;-2.8169',
-    'ICBM': '50.9581, -2.8169',
+    'geo.region': 'GB-CAM',
+    'geo.placename': 'Cherry Hinton, Cambridge',
+    'geo.position': '52.1836;0.1551',
+    'ICBM': '52.1836, 0.1551',
   },
 }
 

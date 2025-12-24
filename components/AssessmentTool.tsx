@@ -94,14 +94,13 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
       }
     }
 
-    // Full Face HIFU - BLACK FRIDAY deal for most cases
+    // Full Face HIFU for most cases
     if (concern === 'jowls' || concern === 'cheeks' || concern === 'fullface' || laxity === 'moderate') {
       return {
         treatment: 'Full Face HIFU',
-        price: '£299',
-        description: 'BLACK FRIDAY SPECIAL! Full face treatment normally £395. Lifts jowls, tightens cheeks, and defines jawline. Save £96!',
-        isSuitable: true,
-        isBlackFriday: true
+        price: '£395',
+        description: 'Our comprehensive treatment for full facial rejuvenation. Lifts jowls, tightens cheeks, and defines your jawline for natural-looking results.',
+        isSuitable: true
       }
     }
 
@@ -115,13 +114,12 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
       }
     }
 
-    // Default to Black Friday deal
+    // Default to Jawline HIFU (intro offer)
     return {
-      treatment: 'Full Face HIFU',
-      price: '£299',
-      description: 'BLACK FRIDAY SPECIAL! Our most popular treatment at a special price. Lift and tighten your entire face. Save £96!',
-      isSuitable: true,
-      isBlackFriday: true
+      treatment: 'Jawline HIFU',
+      price: '£195',
+      description: 'Our introductory offer - perfect for defining your jawline and lifting jowls. An excellent first treatment to experience HIFU results.',
+      isSuitable: true
     }
   }
 
@@ -194,25 +192,14 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
                 Your Perfect HIFU Treatment
               </h3>
 
-              <div className={`rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-4 sm:mb-6 border-2 ${
-                getRecommendation().isBlackFriday
-                  ? 'bg-gradient-to-br from-neutral-900 to-black border-amber-400'
-                  : 'bg-gradient-to-br from-primary-50 to-white border-primary-100'
-              }`}>
-                <h4 className={`text-lg sm:text-xl font-bold mb-2 ${
-                  getRecommendation().isBlackFriday ? 'text-amber-400' : 'text-primary-600'
-                }`}>
+              <div className="rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-4 sm:mb-6 border-2 bg-gradient-to-br from-primary-50 to-white border-primary-100">
+                <h4 className="text-lg sm:text-xl font-bold mb-2 text-primary-600">
                   {getRecommendation().treatment}
-                  {getRecommendation().isBlackFriday && <span className="ml-2 text-xs">✦ BLACK FRIDAY</span>}
                 </h4>
-                <p className={`text-2xl sm:text-3xl font-bold mb-2 sm:mb-3 ${
-                  getRecommendation().isBlackFriday ? 'text-white' : 'gradient-text'
-                }`}>
+                <p className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3 gradient-text">
                   {getRecommendation().price}
                 </p>
-                <p className={`text-sm sm:text-base leading-relaxed ${
-                  getRecommendation().isBlackFriday ? 'text-neutral-300' : 'text-neutral-600'
-                }`}>
+                <p className="text-sm sm:text-base leading-relaxed text-neutral-600">
                   {getRecommendation().description}
                 </p>
               </div>

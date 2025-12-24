@@ -22,33 +22,37 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-5 sm:space-y-6 lg:space-y-8 animate-slide-up text-center lg:text-left">
-            {/* BLACK FRIDAY Badge - Premium Black & Gold */}
-            <div className="inline-flex items-center px-5 sm:px-6 py-2.5 sm:py-3 bg-black border-2 border-amber-400 rounded-full mx-auto lg:mx-0 shadow-lg">
-              <span className="text-amber-400 font-bold text-sm sm:text-base tracking-wide">✦ BLACK FRIDAY ✦</span>
+            {/* Brand Badge - Elegant Pink & Gold */}
+            <div className="inline-flex items-center px-5 sm:px-6 py-2.5 sm:py-3 bg-white border-2 border-accent-400 rounded-full mx-auto lg:mx-0 shadow-lg">
+              <span className="text-primary-700 font-bold text-sm sm:text-base tracking-wide">Diluxe Aesthetics Cambridge</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-              Lift & Tighten
+              Natural Enhancement
               <span className="block gradient-text mt-1 sm:mt-2">Without Surgery</span>
             </h1>
 
             <p className="text-sm sm:text-lg md:text-xl text-neutral-600 leading-relaxed max-w-xl mx-auto lg:mx-0 px-2 sm:px-0">
-              HIFU uses focused ultrasound to lift and tighten skin naturally. Target sagging jowls, neck, and face without surgery or downtime. Visible results that continue improving for months!
+              HIFU uses focused ultrasound to lift and tighten skin naturally. Target sagging jowls, neck, and face without surgery or downtime. Visible results that continue improving for months.
             </p>
 
-            {/* BLACK FRIDAY Offer Box - Premium Black & Gold */}
-            <div className="bg-gradient-to-r from-neutral-900 to-black border-2 border-amber-400 rounded-2xl p-5 sm:p-6 mx-auto lg:mx-0 max-w-xl shadow-lg">
-              <p className="text-amber-400 font-bold text-xs sm:text-sm mb-3 tracking-wide">BLACK FRIDAY SPECIAL - Ends This Month!</p>
-              <div className="flex justify-center">
-                <div className="text-center bg-black border-2 border-amber-400/50 rounded-xl p-4 sm:p-6 shadow-md max-w-xs w-full">
-                  <p className="text-3xl sm:text-5xl font-bold text-white mb-1">£299</p>
-                  <p className="text-sm sm:text-base text-white font-medium">HIFU Treatment</p>
-                  <p className="text-xs text-neutral-400 mt-2 font-semibold line-through">Usually £395</p>
-                  <p className="text-sm text-amber-400 mt-1 font-bold">SAVE £96!</p>
+            {/* Pricing Box - Elegant Pink & Gold */}
+            <div className="bg-gradient-to-r from-primary-50 to-white border-2 border-primary-200 rounded-2xl p-5 sm:p-6 mx-auto lg:mx-0 max-w-xl shadow-lg">
+              <p className="text-primary-700 font-bold text-xs sm:text-sm mb-3 tracking-wide">HIFU Treatments in Cherry Hinton, Cambridge</p>
+              <div className="flex justify-center gap-4">
+                <div className="text-center bg-white border-2 border-primary-200 rounded-xl p-4 sm:p-5 shadow-md flex-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-primary-700 mb-1">£195</p>
+                  <p className="text-sm sm:text-base text-neutral-700 font-medium">Jawline HIFU</p>
+                  <p className="text-xs text-accent-500 mt-2 font-semibold">Intro Offer</p>
+                </div>
+                <div className="text-center bg-white border-2 border-accent-400 rounded-xl p-4 sm:p-5 shadow-md flex-1">
+                  <p className="text-2xl sm:text-3xl font-bold text-primary-700 mb-1">£395</p>
+                  <p className="text-sm sm:text-base text-neutral-700 font-medium">Full Face & Neck</p>
+                  <p className="text-xs text-accent-500 mt-2 font-semibold">Most Popular</p>
                 </div>
               </div>
-              <p className="text-xs sm:text-sm text-neutral-300 mt-3 sm:mt-4 text-center font-medium">Pay Monthly with Klarna • No Downtime Required</p>
+              <p className="text-xs sm:text-sm text-neutral-500 mt-3 sm:mt-4 text-center font-medium">No Downtime • Natural Results</p>
             </div>
 
             {/* CTA Buttons */}
@@ -105,7 +109,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                 className="rounded-2xl shadow-xl w-full"
               >
                 <source
-                  src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/69299b4032bffb76e89a34e2.mp4"
+                  src="https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0abdb716f527612e84dd.mp4"
                   type="video/mp4"
                 />
                 {/* Fallback for browsers that don't support video */}
@@ -134,7 +138,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                     className="rounded-2xl shadow-2xl w-full animate-float"
                   >
                     <source
-                      src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/69299b4032bffb76e89a34e2.mp4"
+                      src="https://storage.googleapis.com/msgsndr/0kfpm8NVBgT1ZEDGRJF3/media/694c0abdb716f527612e84dd.mp4"
                       type="video/mp4"
                     />
                     {/* Fallback for browsers that don't support video */}
@@ -151,11 +155,11 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
               <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg">
                 <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 shadow-xl">
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-neutral-800 mb-2">Award-Finalist Aesthetics Practitioner</h3>
+                    <h3 className="text-xl font-bold text-neutral-800 mb-2">Cambridge Aesthetic Practitioner</h3>
                     <div className="flex justify-center items-center space-x-2 text-primary-600">
-                      <span className="font-medium">4+ Years Experience</span>
+                      <span className="font-medium">NVQ Level IV Qualified</span>
                       <span className="text-primary-300">•</span>
-                      <span className="font-medium">Non-Surgical Facelift Specialist</span>
+                      <span className="font-medium">HIFU Specialist</span>
                     </div>
                   </div>
                 </div>
@@ -170,8 +174,8 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
       </div>
 
       {/* Scroll Indicator - Visible on all devices */}
-      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center">
+      <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 flex justify-center animate-bounce">
+        <div className="flex flex-col items-center text-center">
           <span className="text-xs text-neutral-500 mb-2">Scroll to explore</span>
           <svg className="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />

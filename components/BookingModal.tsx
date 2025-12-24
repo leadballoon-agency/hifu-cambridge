@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { trackBookingModalOpen, trackPhoneClick } from './FacebookPixel'
+import { trackBookingModalOpen } from './FacebookPixel'
 
 interface BookingModalProps {
   isOpen: boolean
@@ -76,92 +76,13 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
           {/* Scrollable Content Area */}
           <div className="flex-1 overflow-y-auto p-6 sm:p-8">
             {/* GHL Calendar */}
-            <div className="space-y-4 sm:space-y-6 animate-fade-in">
-              <div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4">Book Your Appointment</h3>
-                <p className="text-sm sm:text-base leading-relaxed text-neutral-600 mb-4 sm:mb-6">Select your preferred date and time with Marianne</p>
-              </div>
-
-              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 min-h-[600px]">
-                <iframe
-                  src="https://link.leadballoon.co.uk/widget/booking/4ZrqUwMXzlbrWbAZCAou"
-                  style={{
-                    width: '100%',
-                    minHeight: '700px',
-                    height: '100%',
-                    border: 'none',
-                    overflow: 'hidden'
-                  }}
-                  scrolling="no"
-                  id="4ZrqUwMXzlbrWbAZCAou_1764336708415"
-                  title="Amethyst Aesthetics Beauty HIFU Booking Calendar"
-                  sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-                  allow="payment 'src'; fullscreen 'src'"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
-
-              {/* Call Now Option */}
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-neutral-200"></div>
-                </div>
-                <div className="relative flex justify-center text-xs sm:text-sm uppercase">
-                  <span className="bg-white px-2 text-neutral-500">Or</span>
-                </div>
-              </div>
-
-              <a
-                href="tel:+447366904007"
-                onClick={trackPhoneClick}
-                className="block w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-300 hover:shadow-lg group"
-              >
-                <div className="flex items-center justify-center space-x-3 sm:space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-white/20 backdrop-blur rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                    </svg>
-                  </div>
-                  <div className="text-left">
-                    <p className="text-sm sm:text-base font-medium mb-0.5 sm:mb-1">Prefer to speak with us?</p>
-                    <p className="text-xl sm:text-2xl font-bold">07366 904007</p>
-                    <p className="text-xs sm:text-sm text-white/90 mt-0.5">Tap to call now</p>
-                  </div>
-                </div>
-              </a>
-
-              <div className="bg-white border-2 border-primary-100 rounded-xl p-6">
-                <h5 className="font-semibold mb-4 flex items-center">
-                  <svg className="w-5 h-5 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  What's included in your booking:
-                </h5>
-                <ul className="space-y-3 text-sm leading-relaxed text-neutral-700">
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                    <span>Instant confirmation via email and SMS</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                    <span>Free consultation with treatment</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                    <span>Flexible rescheduling options</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                    <span>Secure online booking</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="text-center">
-                <p className="text-xs text-neutral-500">
-                  Booking takes less than 2 minutes • Available appointments updated in real-time
-                </p>
-              </div>
+            <div className="space-y-4 animate-fade-in">
+              <iframe
+                src="https://link.leadballoon.co.uk/widget/booking/TJOFTSvGpU6iWzf8staO"
+                style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px' }}
+                scrolling="no"
+                id="TJOFTSvGpU6iWzf8staO_1766591746692"
+              />
             </div>
           </div>
         </div>

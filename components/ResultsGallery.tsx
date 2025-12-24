@@ -170,32 +170,30 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
           ))}
         </div>
 
-        {/* Reception Area Section - Mobile Optimized */}
+        {/* Clinic Info Section - Mobile Optimized */}
         <div className="mt-8 sm:mt-12">
-          <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full"
-              poster="/images/amethyst-clinic.avif"
-            >
-              <source src="https://storage.googleapis.com/msgsndr/yE0ZTtTwqOwpiUubrP0k/media/692f2825a4526995d93a5156.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 sm:from-black/60 via-black/40 sm:via-transparent to-transparent flex items-center">
-              <div className="p-6 sm:p-8 md:p-12 max-w-full sm:max-w-lg">
-                <h3 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
-                  Welcome to Amethyst Aesthetics Beauty
+          <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium bg-gradient-to-br from-primary-500 to-primary-600">
+            <div className="p-8 sm:p-12 md:p-16 text-center">
+              <div className="max-w-2xl mx-auto">
+                <div className="w-20 h-20 bg-white/20 backdrop-blur rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                </div>
+                <h3 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
+                  Welcome to Diluxe Aesthetics
                 </h3>
-                <p className="text-white/90 text-sm sm:text-base mb-4 sm:mb-6">
-                  Step into our award-finalist beauty salon in South Petherton, Somerset, designed for your comfort during your HIFU treatment journey.
+                <p className="text-white/90 text-sm sm:text-base mb-6 leading-relaxed">
+                  Experience HIFU treatments in the comfort of our private home clinic in Cherry Hinton, Cambridge. A relaxed, professional environment designed for your comfort and outstanding results.
                 </p>
                 <button
                   onClick={onBookingClick}
-                  className="inline-flex items-center bg-white text-primary-600 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium text-sm sm:text-base hover:shadow-lg transition-all duration-300"
+                  className="inline-flex items-center bg-white text-primary-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium text-sm sm:text-base hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   Schedule Consultation
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -205,9 +203,9 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
         {/* Stats Section - Mobile Optimized */}
         <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {[
-            { number: '4+', label: 'Years Experience' },
-            { number: '800+', label: 'Treatments Completed' },
-            { number: '£299', label: 'Starting From' },
+            { number: '5+', label: 'Years Experience' },
+            { number: '500+', label: 'Treatments Completed' },
+            { number: '£195', label: 'Starting From' },
             { number: '1', label: 'Expert Practitioner' }
           ].map((stat, index) => (
             <div key={index} className="text-center">

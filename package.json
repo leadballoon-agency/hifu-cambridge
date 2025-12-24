@@ -1,5 +1,5 @@
 {
-  "name": "amethyst-aesthetics-hifu",
+  "name": "hifu-cambridge",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["hifu", "cambridge", "aesthetics", "non-surgical facelift"],
+  "author": "Diluxe Aesthetics Cambridge",
   "license": "ISC",
-  "description": "HIFU Treatment Landing Page for Amethyst Aesthetics Beauty",
+  "description": "HIFU Treatment Landing Page for Diluxe Aesthetics Cambridge",
   "dependencies": {
     "next": "^15.5.0",
     "react": "^19.1.1",

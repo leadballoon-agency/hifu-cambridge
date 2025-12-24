@@ -1,5 +1,3 @@
-import { trackPhoneClick } from './FacebookPixel'
-
 interface CTASectionProps {
   onBookingClick?: () => void
 }
@@ -31,17 +29,18 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 max-w-3xl mx-auto">
           <div className="bg-white/10 backdrop-blur rounded-xl sm:rounded-2xl p-4 sm:p-6">
-            <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📞</div>
-            <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Call Us</h3>
+            <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📱</div>
+            <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Instagram</h3>
             <a
-              href="tel:+447366904007"
-              onClick={trackPhoneClick}
+              href="https://www.instagram.com/diluxe.aesthetics"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white/90 hover:text-white text-sm sm:text-base"
             >
-              07366 904007
+              @diluxe.aesthetics
             </a>
           </div>
-          
+
           <div className="bg-white/10 backdrop-blur rounded-xl sm:rounded-2xl p-4 sm:p-6">
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📧</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Email</h3>
@@ -49,12 +48,12 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
               Consultations Available
             </p>
           </div>
-          
+
           <div className="bg-white/10 backdrop-blur rounded-xl sm:rounded-2xl p-4 sm:p-6">
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📍</div>
-            <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Visit</h3>
+            <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Location</h3>
             <p className="text-white/90 text-sm leading-relaxed">
-              Unit 2, Old Apple Store<br />New Cross Hill<br />South Petherton, TA13 5HV
+              Cherry Hinton<br />Cambridge
             </p>
           </div>
         </div>
