@@ -53,8 +53,9 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📍</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Location</h3>
             <p className="text-white/90 text-sm leading-relaxed">
-              Cherry Hinton<br />Cambridge
+              216 Cherry Hinton Road<br />Cambridge, CB1 7AW
             </p>
+            <p className="text-white/70 text-xs mt-2">Free parking at rear</p>
           </div>
         </div>
 

@@ -39,10 +39,9 @@ export default function Footer() {
                 <span className="text-neutral-500">Email: </span>
                 <span className="text-neutral-300">Contact via Instagram</span>
               </li>
-              <li className="mt-3 pt-3 border-t border-neutral-800 leading-relaxed">Cherry Hinton</li>
-              <li>Cambridge</li>
-              <li>Cambridgeshire</li>
-              <li>United Kingdom</li>
+              <li className="mt-3 pt-3 border-t border-neutral-800 leading-relaxed">216 Cherry Hinton Road</li>
+              <li>Cambridge, CB1 7AW</li>
+              <li className="mt-2 text-xs text-neutral-500">Free parking at rear<br/>(MDL Male Image Barbers)</li>
             </ul>
           </div>
 

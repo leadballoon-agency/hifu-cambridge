@@ -28,18 +28,27 @@ export default function StructuredData() {
     ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Cherry Hinton",
+      "streetAddress": "216 Cherry Hinton Road",
       "addressLocality": "Cambridge",
       "addressRegion": "Cambridgeshire",
-      "postalCode": "",
+      "postalCode": "CB1 7AW",
       "addressCountry": "GB"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 52.1836,
-      "longitude": 0.1551
+      "latitude": 52.1891,
+      "longitude": 0.1456
     },
     "priceRange": "££",
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Free Parking",
+        "value": true
+      }
+    ],
+    "isAccessibleForFree": false,
+    "publicAccess": true,
     "currenciesAccepted": "GBP",
     "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Klarna"],
     "openingHoursSpecification": [

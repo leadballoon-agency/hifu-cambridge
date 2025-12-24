@@ -47,7 +47,8 @@ components/
 ## Brand Information
 - **Business:** Diluxe Aesthetics Cambridge
 - **Practitioner:** Consolata (NVQ Level IV qualified)
-- **Location:** Cherry Hinton, Cambridge
+- **Address:** 216 Cherry Hinton Road, Cambridge, CB1 7AW
+- **Parking:** Free parking at rear (MDL Male Image Barbers - owned by Consolata's brother)
 - **Instagram:** @diluxe.aesthetics
 
 ## Hosted Media Assets
